@@ -34,6 +34,12 @@ public class GradeCalculatorTest {
 
         Assertions.assertThat(gradeResult).isEqualTo(4.5);
 
+
+        GradeCalculator gradeCalculator1 = new GradeCalculator(new Courses(courses));
+        double gradeResult1 = gradeCalculator1.calcualteGrade();
+
+        Assertions.assertThat(gradeResult1).isEqualTo(4.5);
+
     }
 
 }
